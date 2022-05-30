@@ -1,8 +1,5 @@
-import sys
-import time
 AnswersRight = 0
 print("Welcome to a test quiz!")
-time.sleep(0.17)
 playing = input("Do you want to play? ")
 print(playing)
 if playing != "yes":
@@ -20,8 +17,8 @@ if ram == "3":
     print("Correct!")
     AnswersRight = AnswersRight+1
 else:
-    print("Incorrect. Better Luck!")#
-
-print("You got " + AnswersRight + "answers right!")
+    print("Incorrect. Better Luck!")
+#fixed
+print(f"You got  {AnswersRight}, answers right!")
 quit()
 
