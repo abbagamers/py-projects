@@ -18,7 +18,14 @@ if ram == "3":
     AnswersRight = AnswersRight+1
 else:
     print("Incorrect. Better Luck!")
-#fixed
+#for the quiz, the blank code is:
+#print("Ok, lets go :)")
+#QuestionName= input("What does ____ stand for? \n 1) ____ \n 2) ____ \n 3) ____ \n")
+#if QuestionName == "2":
+#  print("Correct!")
+#    AnswersRight = AnswersRight+1
+#else:
+#    print("Incorrect answer!")
 print(f"You got  {AnswersRight}, answers right!")
 quit()
 
