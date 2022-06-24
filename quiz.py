@@ -1,3 +1,5 @@
+from quizdata import *
+
 AnswersRight = 0
 print("Welcome to a test quiz!")
 playing = input("Do you want to play? ")
@@ -18,6 +20,10 @@ if ram == "3":
     AnswersRight = AnswersRight+1
 else:
     print("Incorrect. Better Luck!")
+
+
+
+
 #for the quiz, the blank code is:
 #QuestionName= input("What does ____ stand for? \n 1) ____ \n 2) ____ \n 3) ____ \n")
 #if QuestionName == "2":
