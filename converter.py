@@ -1,4 +1,4 @@
-from convdata import *
+
 import time
 q = "What type of conversion would you like to make? \n1)cm-in \n2)in-cm \n3)oz-ml \n4)ml-oz \n"
 inp = str(input(q))
@@ -22,4 +22,3 @@ elif inp == "4":
     print(ml/29.574)
     time.sleep(0.5)
     quit()
-    
