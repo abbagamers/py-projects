@@ -1,6 +1,5 @@
 import time
-num  = 1
-while num <= 100:
-    time.sleep(0.5)
-    print(num)
-    num = num + 1
+x  = 1
+while x >= -1:
+    print(x)
+    x = x + 1
