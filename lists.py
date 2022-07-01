@@ -1,5 +1,6 @@
-list = [1,2,2,3,4,5,6,2457,89,732,24,6,9]
-maxlist = max(list)
-for item in list:
-    print(item)
 
+#adds(appends a number to the matrix)
+list2 = [1, 2,4.4,2456,7,9,96,4,6,80,8,6,4,7,0,5,3,]
+list2.append(13)
+for item1 in list2:
+    print(item1)
