@@ -1,5 +1,5 @@
-a=input("WHat is your num?")
-b=input("WHat is your num?")
+a=input("What is your num?")
+b=input("What is your num?")
 if a == b:
     print(f"{a} & {b} are the same")
 else:
