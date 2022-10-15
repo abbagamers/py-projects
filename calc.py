@@ -10,4 +10,3 @@ while loop:
     in4 = input("Would you like to continue? (y/n) ")
     if in4.lower() == 'n':
         loop = False
-
