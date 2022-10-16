@@ -1,7 +1,7 @@
 from runpy import _TempModule
 from ssl import ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
 import time, os, requests
-api_key = '7c71ff2f7c430ccb9fbf8ffc5e78de91'
+api_key = 'UNNAMED'
 
 city_input = input("What city would you like to know the weather forecast for: ")
 weather_data = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city_input}&units=metric&APPID={api_key}')
