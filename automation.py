@@ -1,3 +1,4 @@
+from runpy import _TempModule
 from ssl import ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
 import time, os, requests
 api_key = '7c71ff2f7c430ccb9fbf8ffc5e78de91'
@@ -7,6 +8,8 @@ weather_data = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q=
 weather = weather_data.json()['weather'][0]['main']
 temp = round(weather_data.json()['main']['temp'])
 feels_like = round(weather_data.json()['main']['feels_like'])
+tempmax = round(weather_data.json()['main']['temp_max'])
+tempmin = round(weather_data.json()['main']['temp_min'])
 if weather_data.json()['cod'] == '404':
     print("City not found.")
 if feels_like == temp:
