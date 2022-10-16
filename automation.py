@@ -1,5 +1,3 @@
-from runpy import _TempModule
-from ssl import ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
 import time, os, requests
 from apifile import *
 api_key = api
