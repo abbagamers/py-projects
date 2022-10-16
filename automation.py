@@ -3,7 +3,7 @@ from ssl import ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
 import time, os, requests
 from apifile import *
 api_key = api
-
+#api stored in another file
 city_input = input("What city would you like to know the weather forecast for: ")
 weather_data = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city_input}&units=metric&APPID={api_key}')
 weather = weather_data.json()['weather'][0]['main']
