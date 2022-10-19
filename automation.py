@@ -11,10 +11,16 @@ temp = round(weather_data.json()['main']['temp'])
 feels_like = round(weather_data.json()['main']['feels_like'])
 tempmax = round(weather_data.json()['main']['temp_max'])
 tempmin = round(weather_data.json()['main']['temp_min'])
+
 if weather_data.json()['cod'] == '404':
     print("City not found.")
 if feels_like == temp:
     print(f"The weather for {city_input} is {weather}, and the temperature is {temp} degrees celsius. ")
 else:
     print(f"The weather for {city_input} is {weather}, and the temperature is {temp} degrees celsius. However, the temperature feels like {feels_like} degrees celsius. ")
+mm_question = input('Would you like to see the min and max temperatures? (y/n):')
 
+if mm_question == 'y' or mm_question == 'Y':
+    print(f"The minimum temps for {city_input} is {tempmin}, and the maximum temps for {city_input} is {tempmax}. ")
+else:
+    quit()
