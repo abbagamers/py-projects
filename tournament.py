@@ -29,6 +29,6 @@ else:
     print(f'{g2_win} are the winners!')
     finalist = g2_win
     nf = g1_win
-print(finalist + ' scored ' + str(random.randint(0,4)) + ' more goals than ' + nf)
+print(finalist + ' scored ' + str(random.randint(1,4)) + ' more goals than ' + nf)
 
 
