@@ -23,5 +23,12 @@ else:
 final = g1_win + g2_win
 if random.randint(0,1) == 1:
     print(f'{g1_win} are the winners!')
+    finalist = g1_win 
+    nf = g2_win
 else:
     print(f'{g2_win} are the winners!')
+    finalist = g2_win
+    nf = g1_win
+print(finalist + ' scored ' + str(random.randint(0,4)) + ' more goals than ' + nf)
+
+
